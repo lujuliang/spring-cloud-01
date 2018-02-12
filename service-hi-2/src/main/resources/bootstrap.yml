@@ -1,0 +1,18 @@
+info:
+    build:
+        name: ${app_name?:service-hi-2}
+        version: ${version?:1.0}
+        number: 0
+        environment: DEV
+        environmentDesc: service-hi-2
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+server:
+  port: 8763
+spring:
+  application:
+    name: service-hi
