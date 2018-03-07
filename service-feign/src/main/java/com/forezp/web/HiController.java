@@ -19,4 +19,9 @@ public class HiController {
     public String sayHi(){
         return schedualServiceHi.info();
     }
+    
+    @RequestMapping(value = "/zuul")
+    public String zuul(){
+        return "from feign :" + schedualServiceHi.info();
+    }
 }

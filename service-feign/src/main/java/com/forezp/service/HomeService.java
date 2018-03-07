@@ -8,7 +8,7 @@ import com.forezp.ServiceUtil;
 
 /**
  */
-@FeignClient(value = ServiceUtil.SERVICE_NAME)
+@FeignClient(value = ServiceUtil.SERVICE_NAME, fallback = HomeServiceHiHystric.class)
 public interface HomeService {
     @RequestMapping(value = "/info",method = RequestMethod.GET)
     String info();

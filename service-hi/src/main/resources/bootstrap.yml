@@ -1,6 +1,6 @@
 info:
     build:
-        name: ${app_name?:service-hi}
+        name: service-hi
         version: ${version?:1.0}
         number: 0
         environment: DEV
