@@ -23,7 +23,7 @@ public class HelloControler {
 
     @RequestMapping(value = "/zuul")
     public String zuul(){
-        return "from ribbon :" + helloService.hiService();
+        return "from ribbon ";
     }
 
     
